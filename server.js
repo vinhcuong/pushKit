@@ -6,8 +6,13 @@ var exec = require('child_process').exec;
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+let port = process.env.PORT || 3000;
 
-let port = 3000;
+// server.connection({
+//     port: process.env.PORT || 3000 
+// });
+
+
 console.log('RESTful API server started on: ' + port);
 
 function isEmpty(obj) {
