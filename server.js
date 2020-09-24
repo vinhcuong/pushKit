@@ -18,7 +18,11 @@ function isEmpty(obj) {
     return true;
 }
 
-app.post('/pushKit', function (req, res) {
+app.get('/', function(req, res){
+    res.send("Hello, I'm a API");
+})
+
+app.post('/', function (req, res) {
     //console.log(req.body);
     // console.log(req.body.callerID);
     console.log("Run API");
